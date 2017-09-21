@@ -1,0 +1,24 @@
+/*
+* Filename: README
+* Author: Alex Meza
+* Userid: cs100vbj
+* Description: readme questions
+* Date: August 5, 2016
+*/
+
+Questions:
+
+1) It is necessary that Data& d be constant because this reference must not 
+change due to the BST. The const guarantees that the data stored on BSTNodes
+will not changed by the BST itself.
+
+2a) The post increment operator takes in an argument, namely an int, for the
+purpose of distinguishing it from the preincrement operator, it serves no
+functional value other than that.
+
+2b) The issue with post increment as opposed to pre increment is that upon
+pre incrementing, that new object will immediately be used while as post the object
+must maintain its original state during use and change its state after use.
+to solve this problem, a reference in the form of an iterator is returned pointing to original state of the data whereas the actual object has been incremented. In the end
+this allows for the incrementation to not be used in the program until the object 
+has been operated on. 
